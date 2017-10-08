@@ -30,7 +30,3 @@ func (da defaultAdapter) Adapt(s Service) http.Handler {
 }
 
 var DefaultAdapter Adapter = defaultAdapter{}
-
-func Adapt(s Service) http.Handler {
-	return DefaultAdapter.Adapt(s)
-}
